@@ -27,3 +27,46 @@ This is a Python-based desktop application that monitors real-time CPU clock spe
 ```bash
 git clone git@github.com:aryanb1522006/ram-cpu-monitor-application.git
 cd cpu-ram-monitor
+
+### 2. Install Python dependencies
+pip install mysql-connector-python matplotlib
+
+### 3. MySQL Database Setup
+CREATE DATABASE application;
+USE application;
+
+CREATE TABLE SystemStats (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cpu_clock VARCHAR(255),
+    cpu_usage VARCHAR(255),
+    ram_usage VARCHAR(255),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+### 4. MYSQL connection credentials
+connection = mysql.connector.connect(
+    host='localhost',
+    user='your_mysql_user',
+    password='your_mysql_password',
+    database='application'
+)
+
+### 4. PowerShell Scripts
+Ensure you have the following PowerShell scripts in the correct path:
+
+cpu_clock.ps1: Returns current CPU clock speed.
+cpu_utilization.ps1: Returns current CPU utilization.
+ram.ps1: Returns current RAM usage.
+cpu_info.ps1: Returns CPU information.
+
+## Usage
+Welcome Page: A welcome window will appear. Click "Proceed" to enter the main window.
+Dropdown Menu: The dropdown menu allows you to select one of the following options:
+CPU Clock Speed: Display real-time CPU clock speed.
+CPU Utilization: Display real-time CPU utilization percentage.
+RAM Usage: Display real-time RAM usage percentage.
+Check Average (CPU, RAM): Enter a time range and get the average CPU clock speed, CPU usage, and RAM usage during that period.
+## Database Maintenance
+The application automatically deletes data older than 5 days from the SystemStats table.
+
+![alt text](image.png)
