@@ -76,13 +76,13 @@ Ensure you have the following PowerShell scripts in the correct path:
    - **CPU Utilization**: Display real-time CPU utilization percentage.
    - **RAM Usage**: Display real-time RAM usage percentage.
    - **Check Average (CPU, RAM)**: Enter a time range and get the average CPU clock speed, CPU usage, and RAM usage during that period.
-
+   - **CPU Info**: Fetch and display detailed CPU-specific information (e.g., model, cores, threads).
 ## Database Maintenance
 
 The application automatically deletes data older than 5 days from the `SystemStats` table.
 ## Sample Images
 ![App Screenshot](https://i.imgur.com/jtQI8uw.png)
 
-![App Screenshot](https://imgur.com/a/LPMlZ6w.png)
+![App Screenshot](https://i.imgur.com/y1NWJmU.png)
 
-![App Screenshot](https://imgur.com/a/3WGYhcb.png)
+![App Screenshot](https://i.imgur.com/Vldjq9n.png)
