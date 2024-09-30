@@ -23,10 +23,10 @@ This is a Python-based desktop application that monitors real-time CPU clock spe
 
 ## Setup
 
-### 1. Clone the repository
+#### 1. Clone the repository
 ```bash
-git clone git@github.com:aryanb1522006/ram-cpu-monitor-application.git
-cd cpu-ram-monitor
+git clone git@github.com:aryanb1522006/ram-cpu-monitor-application.git \
+&& cd cpu-ram-monitor
 
 ### 2. Install Python dependencies
 pip install mysql-connector-python matplotlib
