@@ -24,10 +24,10 @@ This is a Python-based desktop application that monitors real-time CPU clock spe
 ## Setup
 
 ### 1. Clone the repository
-'''bash
+```bash
 git clone git@github.com:aryanb1522006/ram-cpu-monitor-application.git \
 && cd cpu-ram-monitor
-'''
+```
 
 ### 2. Install Python dependencies
 ```bash
@@ -80,6 +80,9 @@ Ensure you have the following PowerShell scripts in the correct path:
 ## Database Maintenance
 
 The application automatically deletes data older than 5 days from the `SystemStats` table.
-
+## Sample Images
 ![App Screenshot](https://i.imgur.com/jtQI8uw.png)
 
+![App Screenshot](https://imgur.com/a/LPMlZ6w.png)
+
+![App Screenshot](https://imgur.com/a/3WGYhcb.png)
