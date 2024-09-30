@@ -30,12 +30,12 @@ git clone git@github.com:aryanb1522006/ram-cpu-monitor-application.git \
 '''
 
 ### 2. Install Python dependencies
-'''bash
+```bash
 pip install mysql-connector-python matplotlib
-'''
+```
 
 ### 3. MySQL Database Setup
-'''sql
+```sql
 CREATE DATABASE application;
 USE application;
 
@@ -46,19 +46,19 @@ CREATE TABLE SystemStats (
     ram_usage VARCHAR(255),
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-'''
+```
 
 ### 4. MySQL connection credentials
 Ensure that your MySQL connection is properly set up in the Python script:
 
-'''python
+```python
 connection = mysql.connector.connect(
     host='localhost',
     user='your_mysql_user',
     password='your_mysql_password',
     database='application'
 )
-'''
+```
 
 ### 5. PowerShell Scripts
 Ensure you have the following PowerShell scripts in the correct path:
@@ -81,4 +81,5 @@ Ensure you have the following PowerShell scripts in the correct path:
 
 The application automatically deletes data older than 5 days from the `SystemStats` table.
 
-![alt text](image.png)
+![App Screenshot](https://i.imgur.com/jtQI8uw.png)
+
